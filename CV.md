@@ -50,3 +50,10 @@ restartButton.onclick = function() {
 ```
 
 ---
+
+## Contacts
+- Telegram
+- Github
+- Gmail
+- Phone number +555-55-555-55-55
+
