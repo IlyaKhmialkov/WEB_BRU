@@ -11,6 +11,74 @@ body{
     flex-shrink: 0;
 }
 
+main, footer{
+    margin: 0 65px 0 65px;
+}
+
+main{
+    width: 100%;
+    display: grid;
+    grid-template:
+    "title roomPicture" 1fr
+    "tagline tagline" 1fr
+    "inventionText consoleScreen" 1fr
+    "VSScreen VSScreen" 1fr
+    "reviews reviews" 1fr
+    "getStarted getStarted" 1fr 
+    "nav nav" 1fr / 1fr 1fr;
+}
+
 a{
     text-decoration: none;
+}
+
+header{
+    display: flex;
+}
+
+nav{
+    display: flex;
+}
+
+footer{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.title{
+    grid-area: title;
+}
+.roomPicture{
+    grid-area: roomPicture;
+} 
+.tagline{
+    grid-area: tagline;
+}
+.inventionText{
+    grid-area: inventionText;
+}
+.consoleScreen{
+    grid-area: consoleScreen;
+}
+.VSScreen{
+    grid-area: VSScreen;
+}
+.reviews{
+    grid-area: reviews;
+}
+.getStarted{
+    grid-area: getStarted;
+}
+.nav{
+    grid-area: nav;
 }
