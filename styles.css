@@ -18,6 +18,7 @@ body{
     font-weight: 400;
     flex-shrink: 0;
     overflow-x: hidden;
+    margin-bottom: 0;
 }
 h1{
     font-size: 85px;
@@ -43,7 +44,7 @@ p{
 a{
     text-decoration: none;
 }
-nav{
+header nav{
     display: flex;
 }
 button{
@@ -117,7 +118,7 @@ main{
     "VSScreen VSScreen" 1423px
     "reviews reviews" 899px
     "getStarted getStarted" 123px 
-    "connectGitRepository launchAnExampleWorkspace" 1000px / 1fr 1fr;
+    "connectGitRepository launchAnExampleWorkspace" 856px / 1fr 1fr;
 }
 
 .title{
@@ -521,15 +522,92 @@ h3{
 }
 .nav{
     background: #F9F9F9;
-    width: 1500px;
+    box-sizing: border-box;
+    width: 1580px;
     margin-left: -65px;
+    padding: 0 312px 0 367px;
+    height: 434.78px;
+}
+.navInSite{
     display: flex;
-    justify-content: center;
-    gap: 180.45px;
+    justify-content: space-between;
+    gap: 130px;
+    width: 100%;
+}
+.navInSite ul{
+    list-style-type: none;
+    margin-top: 49.6px;
+    padding: 0;
+}
+.navInSite ul li{
+    color: #12100C;
+    font-size: 13.72px;
+    font-weight: 700;
+    line-height: 20.58px;
+    margin-bottom: 8px;
+}
+.navInSite a{
+    color: rgba(18, 16, 12, 0.70);
+    font-size: 13.72px;
+    line-height: 20.58px;
+}
+.navInSite sup{
+    font-size: 8px;
+    top: -7px; 
+    right: -2px; 
+}
+.nav hr{
+    margin: 32px 0 0 0;
+    border-color: #ffffff;
+}
+.navOutSide img{
+    width: 25.33px;
+    height: 25.33px;
+}
+.navOutSide img:first-of-type{
+    float: left;
+}
+.navOutSide p{
+    font-size: 13.72px;
+    line-height: 20.58px;
+    padding: 3px 0 0 35px;
+    margin: 35px 0;
+    letter-spacing: -0.2px;
+}
+.contacts{
+    float: right;
+    margin: -58.5px 2px 0 0;
+    width: 110px;
+    display: flex;
+    gap: 16.88px;
 }
 
-
-
 footer{
-    display: flex;
+    height: 50.65px;    
+    background: #ECE7E5;
+    box-sizing: border-box;
+    width: 1580px;
+    margin-left: -65px;
+    padding: 12px 0 0 74px;
+}
+footer p{
+    font-size: 16.88px;
+    line-height: 25.33px;
+}
+footer a{
+    color: rgba(18, 16, 12, 0.59);
+    text-decoration-line: underline;
+}
+footer button{
+    float: right;
+    width: 172px;
+    height: 34px;
+    border-radius: 8.44px;
+    background: #F9F9F9;
+
+    color: rgba(18, 16, 12, 0.70);
+    text-align: center;
+    font-size: 16.88px;
+    line-height: 25.33px;
+    margin: -29px 21px 0 0;
 }
