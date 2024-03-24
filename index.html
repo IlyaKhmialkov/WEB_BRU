@@ -76,24 +76,24 @@
     <section class="VSScreen">
       <h2>Remote-first. Secure by design.</h2>     
 
-      <img src="images\VSCode-screen.png" alt="console screen">
+      <img src="images\VSCode-screen.png" alt="console screen" class="VSScreenImg">
 
-      <p>
-        You no longer need an over-powered laptop to code, Gitpod works just as <br>
-        smoothly on a Chromebook or iPad. All you need is a browser. Gitpod centralizes <br>
-        all source code and never stores it on insecure machines and networks.
-      </p>
-      <button>
-        <img src="images\Chrome-logo.svg" alt="">
-        Chrome Extension
-      </button>
-      <button>
-        <img src="images\Firefox-logo.svg" alt="">
-        Firefox Extension
-      </button>
-    </section>
+      <p>You no longer need an over-powered laptop to code, Gitpod works just as </p>
+      <p>smoothly on a Chromebook or iPad. All you need is a browser. Gitpod centralizes</p>
+      <p>all source code and never stores it on insecure machines and networks.</p>
 
-    
+      <div class="extensionButtonsDiv">
+        <button class="extensionButton1">
+          <img src="images\Chrome-logo.svg" alt="">
+          Chrome Extension
+        </button>
+        <button class="extensionButton2">
+          <img src="images\Firefox-logo.svg" alt="">
+          Firefox Extension
+        </button>
+      </div>
+      
+    </section>    
 
     <section class="reviews">
       <h2>Used by 400,000+ developers.</h2>
@@ -103,16 +103,16 @@
           <p>GitPod is incredibly cool.</p>
           <p>In my opinion, this is a big step in open source software contribution. I'm excited to see where we go from here.</p>
           <img src="images\Ben.png" alt="picture of Ben">
-          <p>Ben Halpern</p>
-          <p>Creator and Co-founder <a href="#">@forem</a> and <a href="#">@ThePracticalDev</a></p>
+          <p class="reviewsName">Ben Halpern</p>
+          <p>Creator and Co-founder<a href="#"> @forem</a> and<a href="#"> @ThePracticalDev</a></p>
         </div>
         
         <div class="review">
           <p>Let's say we were overwhelmed how smooth @gitpod workspaces creation & own Docker image for workspaces worked.</p>
           <p>Plus, installing @code extensions from the store and integrating @gitlab CI. That blew my mind entirely, and that is hard ;)</p>
           <img src="images\Michael.png" alt="picture of Michael">
-          <p>Michael Friedrich</p>
-          <p>Developer Evangelist <a href="#">@GitLab</a></p>
+          <p class="reviewsName">Michael Friedrich</p>
+          <p>Developer Evangelist<a href="#"> @GitLab</a></p>
         </div>
 
         <div class="review">
@@ -121,8 +121,8 @@
             by just prepending "gitpod.io#" to the PR URL. Super useful for reviewing/testing stuff without having to check it out locally!
           </p>
           <img src="images\Julius.png" alt="picture of Julius">
-          <p>Julius Volz</p>
-          <p>Creator <a href="#">@PrometheusIO</a></p>
+          <p class="reviewsName">Julius Volz</p>
+          <p>Creator<a href="#"> @PrometheusIO</a></p>
         </div>
 
         <div class="review">
@@ -131,7 +131,7 @@
             just from stumbling across Github repos that interest me and appending “http://gitpod.io/#” to the URL. A+ tool all around.
           </p>
           <img src="images\unnown-user.png" alt="picture of unnown user">
-          <p>David Ressler</p>
+          <p class="reviewsName">David Ressler</p>
           <p>Engineering Manager</p>
         </div>
       </div>

@@ -19,6 +19,27 @@ body{
     flex-shrink: 0;
     overflow-x: hidden;
 }
+h1{
+    font-size: 85px;
+    font-family: 'Roboto-Bold';
+    margin: 80px 0 41px 0;
+    line-height: 92.9px;
+    letter-spacing: -0.35px;
+}
+h2{
+    color: #12100C;
+    text-align: center;
+    font-size: 57px;
+    font-family: 'Roboto-Bold';
+    line-height: 66px; 
+    margin: 0;
+}
+p{
+    color: rgba(18, 16, 12, 0.70);
+    font-size: 24.3px;
+    line-height: 33.4px;
+    margin: 0;
+}
 a{
     text-decoration: none;
 }
@@ -27,6 +48,7 @@ nav{
 }
 button{
     border: none;
+    box-shadow: 0px 0.5px 2px 0px rgba(0, 0, 0, 0.10);
 }
 sup{
     color: #FF8A00;
@@ -94,10 +116,10 @@ main{
     width: 1440px;
     display: grid;
     grid-template:
-    "title roomPicture" 722px
-    "tagline tagline" 590px
-    "inventionText consoleScreen" 969px
-    "VSScreen VSScreen" 1176px
+    "title roomPicture" 935px
+    "tagline tagline" 625px
+    "inventionText consoleScreen" 858px
+    "VSScreen VSScreen" 1423px
     "reviews reviews" 1026px
     "getStarted getStarted" 930px 
     "nav nav" 1fr / 0.996fr 1.004fr;
@@ -113,18 +135,6 @@ main{
     height: 688px;
     margin-top: 61px;
 } 
-h1{
-    font-size: 85px;
-    font-family: 'Roboto-Bold';
-    margin: 80px 0 41px 0;
-    line-height: 92.9px;
-    letter-spacing: -0.35px;
-}
-p{
-    color: rgba(18, 16, 12, 0.70);
-    font-size: 24.3px;
-    line-height: 33.4px;
-}
 .tryNowDiv{
     margin-top: 32.5px;
     width: 400px;
@@ -134,6 +144,7 @@ p{
     flex-wrap: wrap;
 }
 .tryNowDiv p{
+    margin: 16.9px 0 16.9px 0;
     font-size: 16.9px;
     line-height: 25.3px; 
 }
@@ -163,15 +174,8 @@ p{
 .tagline{
     grid-area: tagline;
     position: relative;
-    margin-top: 213px;
 }
-h2{
-    color: #12100C;
-    text-align: center;
-    font-size: 57px;
-    font-family: 'Roboto-Bold';
-    line-height: 66px; 
-    margin: 0;
+.tagline h2{
     text-indent: -57px;
 }
 .grayCrossed{
@@ -183,25 +187,24 @@ h2{
 }
 .line1 {
     position: absolute;
-    bottom: 71.5%; 
+    bottom: 82.8%; 
     left: 140px;
     width: 76.5%;
-    height: 2.75px; 
+    height: 2.9px; 
     background-color: #999795; 
 }
 .line2 {
     position: absolute;
-    bottom: 53.75%; 
+    bottom: 72%; 
     left: 159px;
     width: 74%;
-    height: 2.75px; 
+    height: 2.9px; 
     background-color: #999795; 
 }
 
-
 .inventionText{
     grid-area: inventionText;
-    margin-top: 298px;
+    margin-top: 50px;
 }
 h3{
     color: #12100C;
@@ -242,13 +245,119 @@ h3{
     line-height: 16.88px;
     padding-bottom: 2.61px;
 }
-
 .consoleScreen{
-    margin: 248px 0 0 44px;
+    margin-left: 44px;
     grid-area: consoleScreen;
     width: 622.6px;
     height: 498.1px;
 }
+
+.VSScreen{
+    grid-area: VSScreen;
+}
+.VSScreen h2{
+    text-indent: -50px;
+}
+.VSScreenImg{
+    margin: 33px 0 21px -5px;
+    width: 1387px;
+    height: 915px;
+}
+.VSScreen p{
+    text-align: center;
+    font-size: 25.33px;
+    line-height: 33.7px; 
+    text-indent: -60px;
+}
+.extensionButtonsDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+}
+.extensionButtonsDiv img{
+    width: 25.3px;
+    height: 25.3px;
+    position: absolute; 
+    left: 6%; 
+    top: 23%;
+}
+.extensionButtonsDiv button{
+    position: relative;
+    height: 49.6px;
+    border-radius: 9.5px;
+    background: #FFF;
+    text-align: center;
+    position: relative;
+    color: #12100C;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 33.6px;
+    padding: 0 0 2.44px 35px;
+    letter-spacing: -0.75px;
+}
+.extensionButton1{
+    width: 218.5px;    
+}
+.extensionButton2{
+    margin: 0 59px 0 16.5px;
+    width: 210px;
+}
+.extensionButton1::after, .extensionButton2::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid #000;
+    z-index: -1;
+}
+
+
+.reviews{
+    grid-area: reviews;
+}
+.reviews h2{
+    text-indent: -59px;
+}
+.reviewsDiv{
+    display: flex;
+    overflow-x: none;
+    margin-top: 61.5px;
+    gap: 25px
+}
+.reviewsDiv img{
+    width: 50.65px;
+    height: 50.65px;   
+    float: left;
+    margin: 5px 13px 10px 0;
+}
+.review{
+    flex-shrink: 0;
+    width: 405.2px;
+    border-radius: 16.9px;
+    background: #FFF;
+    padding: 27.44px 34px 15px 25.33px;
+    box-sizing: border-box;
+    z-index: -1;
+}
+.review p{
+    color: #12100C;
+    font-size: 16.9px;
+    line-height: 25.33px;
+    margin-bottom: 9.5px;
+}
+.reviewsName{
+    margin-top: 14px;
+    font-weight: bold;
+}
+.review a{
+    color: #12100C;
+    font-weight: bold;
+    word-spacing: 4.5px;
+}
+
+
 
 
 
@@ -259,35 +368,6 @@ footer{
     display: flex;
 }
 
-.review{
-    background-color: #FFF;
-    width: 384px;
-}
-
-.reviewsDiv{
-    display: flex;
-    gap: 24px
-}
-
-
-
-
-
-
-
-
-
-
-
-
-.VSScreen{
-    grid-area: VSScreen;
-    width: 1269px;
-    height: 821px;
-}
-.reviews{
-    grid-area: reviews;
-}
 .getStarted{
     grid-area: getStarted;
 }
