@@ -2,6 +2,14 @@
     font-family: 'Roboto';
     src: url('fonts/Roboto-Regular.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('fonts/Roboto-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('fonts/Roboto-Medium.ttf') format('truetype');
+}
 
 body{
     font-family: 'Roboto';
@@ -9,69 +17,273 @@ body{
     font-style: normal;
     font-weight: 400;
     flex-shrink: 0;
+    overflow-x: hidden;
 }
-
-main, footer{
-    margin: 0 65px 0 65px;
-}
-
-main{
-    width: 100%;
-    display: grid;
-    grid-template:
-    "title roomPicture" 1fr
-    "tagline tagline" 1fr
-    "inventionText consoleScreen" 1fr
-    "VSScreen VSScreen" 1fr
-    "reviews reviews" 1fr
-    "getStarted getStarted" 1fr 
-    "nav nav" 1fr / 1fr 1fr;
-}
-
 a{
     text-decoration: none;
 }
-
-header{
-    display: flex;
-}
-
 nav{
     display: flex;
 }
+button{
+    border: none;
+}
+sup{
+    color: #FF8A00;
+    line-height: 0px; 
+    position: relative;
+    font-size: 12px;
+    top: -7px; 
+    right: -8px; 
+}
+
+header{
+    margin: 0 25.5px 0 25.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+header nav{
+    padding-right: 10px;
+}
+
+header nav ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 17.1px;
+    gap: 51px;
+    padding: 0; 
+    margin: 0 0 2.1px 0;
+    line-height: 24px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    word-spacing: 1px;
+}
+header nav ul :last-child{
+    margin-left: 1.5px;
+}
+
+header button{
+    border-radius: 14px;
+    background: #12100C;
+    color: #F9F9F9;
+    height: 34px;
+    width: 85px;
+    margin-bottom: 2px;
+    font-size: 14px;
+    padding-top: 4px;
+    letter-spacing: 0.5px;
+    line-height: 20px; 
+}
+
+header a{
+    color: rgba(18, 16, 12, 0.70)
+}
+
+.GitpodLogo{
+    width: 138.5px;
+    margin-bottom: 2.3px;
+}
+
+main, footer{
+    margin: 0 60.5px 0 60.5px;
+}
+
+main{
+    width: 1440px;
+    display: grid;
+    grid-template:
+    "title roomPicture" 722px
+    "tagline tagline" 590px
+    "inventionText consoleScreen" 969px
+    "VSScreen VSScreen" 1176px
+    "reviews reviews" 1026px
+    "getStarted getStarted" 930px 
+    "nav nav" 1fr / 0.996fr 1.004fr;
+}
+
+.title{
+    grid-area: title;
+    margin: 88px 0 0 0;
+}
+.roomPicture{
+    grid-area: roomPicture;
+    width: 665px;
+    height: 688px;
+    margin-top: 61px;
+} 
+h1{
+    font-size: 85px;
+    font-family: 'Roboto-Bold';
+    margin: 80px 0 41px 0;
+    line-height: 92.9px;
+    letter-spacing: -0.35px;
+}
+p{
+    color: rgba(18, 16, 12, 0.70);
+    font-size: 24.3px;
+    line-height: 33.4px;
+}
+.tryNowDiv{
+    margin-top: 32.5px;
+    width: 400px;
+    display: flex;
+    column-gap: 25.3px;
+    row-gap: 1px;
+    flex-wrap: wrap;
+}
+.tryNowDiv p{
+    font-size: 16.9px;
+    line-height: 25.3px; 
+}
+.tryNowDiv img{
+    width: 30.6px;
+    height: 30.6px; 
+    margin-left: 5px;
+}
+.tryNowDiv img:first-of-type{
+    margin-left: 8px;
+}
+.tryNowButton{
+    margin-top: 17.5px;
+    width: 169px;
+    height: 48.5px;
+    border-radius: 16.9px;
+    background: #FFAE33;
+    color: #12100C;
+    text-align: center;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 23.7px; 
+    padding-bottom: 2.61px;
+    word-spacing: -2px;
+}
+
+.tagline{
+    grid-area: tagline;
+    position: relative;
+    margin-top: 213px;
+}
+h2{
+    color: #12100C;
+    text-align: center;
+    font-size: 57px;
+    font-family: 'Roboto-Bold';
+    line-height: 66px; 
+    margin: 0;
+    text-indent: -57px;
+}
+.grayCrossed{
+    color: #999795;
+    font-size: 57px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    line-height: 67px;
+}
+.line1 {
+    position: absolute;
+    bottom: 71.5%; 
+    left: 140px;
+    width: 76.5%;
+    height: 2.75px; 
+    background-color: #999795; 
+}
+.line2 {
+    position: absolute;
+    bottom: 53.75%; 
+    left: 159px;
+    width: 74%;
+    height: 2.75px; 
+    background-color: #999795; 
+}
+
+
+.inventionText{
+    grid-area: inventionText;
+    margin-top: 298px;
+}
+h3{
+    color: #12100C;
+    font-size: 33.8px;
+    font-family: 'Roboto-Bold';
+    line-height: 60px; 
+    margin: 0;
+}
+.inventionText p{
+    font-size: 25.33px;
+    line-height: 33.7px;
+    margin: 0 0 159px 0;
+}
+.moreOnPrebuildsButton{
+    width: 171px;
+    height: 33.8px;
+    border-radius: 11.1px;
+    background: #FFAE33;
+    margin-right: 13px;
+    letter-spacing: -0.5px;
+    color: #12100C;
+    text-align: center;
+    font-size: 14.77px;
+    font-weight: 700;
+    line-height: 16.88px;
+    padding-bottom: 2.61px;
+}
+.documentationButton{
+    width: 154.8px;
+    height: 33.8px;
+    border-radius: 11.1px;
+    background: #FFB0AE;
+    letter-spacing: -0.5px;
+    color: #12100C;
+    text-align: center;
+    font-size: 14.77px;
+    font-weight: 700;
+    line-height: 16.88px;
+    padding-bottom: 2.61px;
+}
+
+.consoleScreen{
+    margin: 248px 0 0 44px;
+    grid-area: consoleScreen;
+    width: 622.6px;
+    height: 498.1px;
+}
+
+
+
+
+
 
 footer{
     display: flex;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-.title{
-    grid-area: title;
+.review{
+    background-color: #FFF;
+    width: 384px;
 }
-.roomPicture{
-    grid-area: roomPicture;
-} 
-.tagline{
-    grid-area: tagline;
+
+.reviewsDiv{
+    display: flex;
+    gap: 24px
 }
-.inventionText{
-    grid-area: inventionText;
-}
-.consoleScreen{
-    grid-area: consoleScreen;
-}
+
+
+
+
+
+
+
+
+
+
+
+
 .VSScreen{
     grid-area: VSScreen;
+    width: 1269px;
+    height: 821px;
 }
 .reviews{
     grid-area: reviews;
