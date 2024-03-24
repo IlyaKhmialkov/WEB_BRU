@@ -107,21 +107,17 @@ header a{
     width: 138.5px;
     margin-bottom: 2.3px;
 }
-
-main, footer{
-    margin: 0 60.5px 0 60.5px;
-}
-
 main{
+    margin: 0 60.5px 0 60.5px;
     display: grid;
     grid-template:
     "title roomPicture" 935px
     "tagline tagline" 625px
     "inventionText consoleScreen" 858px
     "VSScreen VSScreen" 1423px
-    "reviews reviews" 1026px
-    "getStarted getStarted" 930px 
-    "nav nav" 1fr / 1fr 1fr;
+    "reviews reviews" 899px
+    "getStarted getStarted" 123px 
+    "connectGitRepository launchAnExampleWorkspace" 1000px / 1fr 1fr;
 }
 
 .title{
@@ -132,7 +128,7 @@ main{
     grid-area: roomPicture;
     width: 665px;
     height: 688px;
-    margin: 61px 0 0 26px;
+    margin: 61px 0 0 32px;
 } 
 .tryNowDiv{
     margin-top: 32.5px;
@@ -347,21 +343,193 @@ h3{
     font-weight: bold;
     word-spacing: 4.5px;
 }
+.companies{
+    margin-top: 110px;
+}
+.firstRowCompanies , .secondRowCompanies{
+    display: flex;
+    justify-content: center;
+    gap: 62px;
+    margin-bottom: 22px;
+}
+.GitLabLogo{
+    margin-top: 17px;
+    width: 100.25px;
+    height: 44.33px;
+}
+.freeCodeCampLogo{
+    margin-top: 32px;
+    width: 137.2px;
+    height: 16.9px;
+}
+.DwaveLogo{
+    margin-top: -4.5px ;
+    width: 130.85px;
+    height: 86.5px;
+}
+.googleLogo{
+    margin-top: 24px;
+    width: 90.75px;
+    height: 30.6px;
+}
+.amazonLogo{
+    margin-top: 30px;
+    width: 90.75px;
+    height: 27.44px;
+}
+.facebookLogo{
+    margin-top: 29px;
+    width: 100.25px;
+    height: 19px;
+}
+.UberLogo{
+    margin-top: 20px;
+    width: 100.25px;
+    height: 34.82px;
+}
+.OpenAILogo{
+    margin: 8px 0 0 150px;
+    width: 135px;
+    height: 41px;
+}
+.intelLogo{
+    width: 80.2px;
+    height: 52.76px;
+}
+.theiaLogo{
+    margin-top: 20px;
+    width: 111.8px;
+    height: 15.83px;
+}
+.codeInstituteLogo{
+    margin-top: 6px;
+    width: 100.25px;
+    height: 44.32px;
+}
+._4GeeksLogo{
+    margin-top: 11px;
+    width: 90.75px;
+    height: 31.66px;
+}
+.getStarted{
+    grid-area: getStarted;
+}
 
+.connectGitRepository, .launchAnExampleWorkspace{
+    width: 677.5px;
+    height: 687px;
+    border-radius: 21.1px;
+    background: #FFF;
+    box-sizing: border-box;
+    padding: 50px 70px;
+}
+.connectGitRepository h3, .launchAnExampleWorkspace h3, .connectGitRepository p, .launchAnExampleWorkspace p{
+    text-align: center;
+}
+.connectGitRepository p, .launchAnExampleWorkspace p{
+    font-size: 25.33px;
+    line-height: 33.7px; 
+}
+.connectGitRepository button{
+    width: 276.5px;
+    height: 48.54px;
+    border-radius: 12.66px;
+    margin: 0 0 17px 130.5px;
+    position: relative;
 
+    color: #FFF;
+    text-align: center;
+    font-size: 14.77px;
+    font-weight: 700;
+    line-height: 16.88px;
+    letter-spacing: -0.5px;
+    padding: 0 0 0 0;
+}
+.connectGitRepository .connectGitLab{
+    margin-top: 65px;
+    background: #FC6D26;
+    padding-left: 25px;
+}
+.connectGitRepository .connectGitHub{
+    background: #000;
+    padding-left: 27px;
+}
+.connectGitRepository .connectBitbucket{
+    margin-bottom: 67px;
+    background: #2684FF;
+    padding-left: 44px;
+}
+.connectGitRepository button img{
+    width: 29.55px;
+    height: 29.55px;
+    position: absolute; 
+    left: 12.75%; 
+    top: 20%;
+}  
+.connectGitRepository .special{
+    margin: 7px 0 0 190px;
+    width: 159.35px;
+    height: 32.71px;
+    border-radius: 12.66px;
+    background: #FFE4BC;
+}
 
+.launchAnExampleWorkspace{
+    margin-left: 20px;
+    padding: 50px 59.1px;
+}
+.launchAnExampleWorkspace p{
+    font-size: 24.27px;
+}
+.launchAnExampleWorkspace div{
+    box-sizing: border-box;
+    padding: 12.66px 12.66px 12.66px 16.5px;
+    width: 559.3px;
+    height: 59.1px;
+    border-radius: 12.66px;
+    background: #F9F9F9; 
+    margin-bottom: 12.5px;
+}
+.launchAnExampleWorkspace div:first-of-type{
+    margin-top: 33px;
+}
+.launchAnExampleWorkspace div img{
+    margin-top: 2px;
+    width: 28.49px;
+    height: 28.49px;
+}
+.launchAnExampleWorkspace div p{
+    text-align: left;
+    margin: -35px 0 0 47px;
+    padding-top: 4px;
+    font-size: 21.1px;
+    line-height: 21.1px; 
+}
+.launchAnExampleWorkspace div button{
+    float: right;
+    width: 150.9px;
+    height: 33.77px;
+    border-radius: 12.66px;
+    background: #12100C;
+    padding-bottom: 2px;
+    margin-top: -25px;
 
-
+    color: #FFF;
+    text-align: center;
+    font-size: 14.77px;
+    line-height: 16.88px;
+}
+.nav{
+    background: #F9F9F9;
+    width: 1500px;
+    margin-left: -65px;
+    display: flex;
+    justify-content: center;
+    gap: 180.45px;
+}
 
 
 
 footer{
     display: flex;
-}
-
-.getStarted{
-    grid-area: getStarted;
-}
-.nav{
-    grid-area: nav;
 }
